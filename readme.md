@@ -42,6 +42,8 @@ OMP_NUM_THREADS=1 python -m torch.distributed.launch --nproc_per_node 1 run_pret
 
 4. For downstream evaluation, please follow instructions in this [repo](https://github.com/zhaozh10/cxr-eval).
 
+5. For a quick introduction to attention-controlled masking, please run [demo.py](image_masking/demo.py) in the "image_masking" directory.
+
 ## License
 
 This project is under the Apache License 2.0 license. See [LICENSE](LICENSE) for details.
