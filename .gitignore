@@ -1,0 +1,5 @@
+*.out
+preTrain/*
+output_dir/*
+*__pycache__/*
+*sh
