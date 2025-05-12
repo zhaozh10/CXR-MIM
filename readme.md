@@ -26,7 +26,7 @@ by Zihao Zhao, Mei Wang, Zhiming Cui, Sheng Wang, Qian Wang, Dinggang Shen<br/>
 
 ## Usage
 
-1. Put "vit_base_p16_224_timm.pth", the ImageNet pre-trained weight of ViT-B/16, under directory "preTrain/". It was originally provided by timm and can be accessed [here](https://drive.google.com/file/d/1dYG8s7ZlwgJZNz3AVdAia0qyQcIC6LBH/view?usp=drive_link).
+1. Put "vit_base_p16_224_timm.pth", the ImageNet pre-trained weight of ViT-B/16, under directory "preTrain/". It was originally provided by timm and can be accessed [here](https://drive.google.com/file/d/1K2-uP3q3sp-DDMZEOygLfOejnIpwsa8g/view?usp=sharing).
 
 2. To pre-train ViT-B/16 model on REFLACX dataset, run the following command:
 
@@ -40,7 +40,7 @@ OMP_NUM_THREADS=1 python -m torch.distributed.launch --nproc_per_node 1 run_pret
 
 3. The pretrained weight of CXR-MIM can be accessed [here](https://drive.google.com/file/d/1wmkRKPJct0StBvt0HOLK0x9HkSozQMxC/view?usp=drive_link).
 
-4. For downstream evaluation, please follow instructions in this [repo](https://github.com/zhaozh10/cxr-eval).
+4. For downstream evaluation, please follow instructions in this [repo](https://github.com/zhaozh10/CXR-Eval).
 
 5. For a quick introduction to attention-controlled masking, please run [demo.py](image_masking/demo.py) in the "image_masking" directory.
 
