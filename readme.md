@@ -40,7 +40,7 @@ OMP_NUM_THREADS=1 python -m torch.distributed.launch --nproc_per_node 1 run_pret
 
 3. The pretrained weight of CXR-MIM can be accessed [here](https://drive.google.com/file/d/1wmkRKPJct0StBvt0HOLK0x9HkSozQMxC/view?usp=drive_link).
 
-4. For downstream evaluation, please follow instructions in this [repo](https://github.com/zhaozh10/CXR-Eval).
+4. For downstream evaluation, please follow instructions in this [repo](https://github.com/zhaozh10/CXR-Vis-Eval).
 
 5. For a quick introduction to attention-controlled masking, please run [demo.py](image_masking/demo.py) in the "image_masking" directory.
 
