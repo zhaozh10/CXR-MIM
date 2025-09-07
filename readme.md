@@ -1,29 +1,5 @@
 # [IPMI 2025] Taming Masked Image Modeling for Chest X-ray Diagnosis by Incorporating Clinical Visual Priors
 
-by Zihao Zhao, Mei Wang, Zhiming Cui, Sheng Wang, Qian Wang, Dinggang Shen<br/>
-
-## Motivation
-
-<div align="center">
-  <img src="asset/teaser.png" style="width: 100%">
-</div>
-
-> <p align="justify"> 
-> <b>Illustration of thoracic abnormalities of varying sizes and the alignment of gaze data with these regions.</b> (Left) shows the proportion of different abnormalities in relation to the entire image across the REFLACX dataset, categorized into three scales: small, medium, and large. (Top Right) qualitatively demonstrates how gaze data aligns closely with lesion regions, indicated by colored bounding boxes. (Bottom Right) provides quantitative results by computing gaze density for normal and abnormal regions, respectively. The average gaze density within abnormal regions is six times higher than that of normal regions.
-
-</p>
-
-## Method
-
-<div align="center">
-  <img src="asset/method.png" style="width: 100%">
-</div>
-
-> <p align="justify"> 
-> <b>Overview of our proposed CXR-MIM by using ViT-B/16 as the default vision backbone.</b>  CXR-MIM integrates (1) attention-controlled masking to preserve clinically significant features based on radiologist attention, and (2) pyramid adaptive reconstruction to reconstruct multi-scale HOG features using embeddings from selected transformer layers. The reconstruction loss is further adaptively weighted through recalibrated gaze heatmaps, emphasizing important regions during training.
-
-</p>
-
 ## Usage
 
 1. Put "vit_base_p16_224_timm.pth", the ImageNet pre-trained weight of ViT-B/16, under directory "preTrain/". It was originally provided by timm and can be accessed [here](https://drive.google.com/file/d/1K2-uP3q3sp-DDMZEOygLfOejnIpwsa8g/view?usp=sharing).
